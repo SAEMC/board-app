@@ -1,15 +1,8 @@
 import { User } from '../auth/user.entity';
-import {
-  BaseEntity,
-  Column,
-  Entity,
-  ManyToOne,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { BoardStatus } from './board-status.enum';
 
 @Entity()
-// export class Board extends BaseEntity {
 export class Board {
   @PrimaryGeneratedColumn()
   id: number;
